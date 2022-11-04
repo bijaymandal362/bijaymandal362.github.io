@@ -1,0 +1,52 @@
+@media screen and (max-width: 600px) {
+    #container{
+        background-color: #13ab5a;
+        font-size: 50%;
+        display: grid;
+        grid-template-areas:
+        'b b b b'
+        'h h h h'
+        's s s s'
+        'c c c c'
+        'f f f f';
+    }
+}
+
+#container{
+    background-color: #2B797A;
+    font-size: 50%;
+    display: grid;
+    grid-template-areas:
+    'b b b b'
+    'h h h h'
+    's c c c'
+    's c c c'
+    'f f f f';
+}
+#banner{
+    grid-area: b;
+    text-align: center;
+}
+#heading{
+    grid-area: h;
+    text-align: center;
+}
+
+#sidebar{
+    grid-area: s;
+}
+
+#content{
+    grid-area: c;
+    padding-left: 5%;
+}
+
+#footer{
+    grid-area: f;
+    text-align: center;
+    padding-top: 15%;
+}
+
+img{
+    width: 60%;
+}
