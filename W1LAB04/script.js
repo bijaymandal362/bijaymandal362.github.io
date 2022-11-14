@@ -86,9 +86,24 @@ function jsFiddle8b(x) {
 
 function jsFiddle8c(x) {
 
-    const b = x.reduce(function (previousValue, element, i, array) {
+    const b = x.reduce(function (previousValue, element) {
         return previousValue * element;
     });
 
     return b;
 };
+
+let arrays = ["biay", "mandal"];
+function xy(...x) {
+    return x.
+        reduce((previousValue, element) => previousValue + element, 0);
+}
+let x = [1, 2, 3, 4];
+console.log("result " + xy(...[1, 2, 3, 4, 5, 6]));
+console.log("result2 " + xy(...[1, 2, 3, 4]));
+
+function combine(x, y) {
+    return [...x , ...y];
+}
+
+console.log(combine([1,2,3],[1,2,3,4,5,6]));
